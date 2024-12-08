@@ -1,0 +1,21 @@
+// A development container (or dev container for short) allows you to use a container as a full-featured development environment.
+{
+    "name": "Fitness assistant",
+    "image": "mcr.microsoft.com/devcontainers/base:latest",
+    "forwardPorts": [
+      3000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "javascript.format.enable": true,
+          "javascript.validate.enable": true
+        },
+        "extensions": [
+          "ms-vscode.vscode-typescript-tslint-plugin",
+          "esbenp.prettier-vscode"
+        ]
+      }
+    },
+    "postCreateCommand": "echo 'Container created successfully!'"
+  }
