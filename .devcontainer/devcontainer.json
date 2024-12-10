@@ -1,0 +1,20 @@
+{
+  "name": "fitness-assistant dev container",
+  "image": "mcr.microsoft.com/devcontainers/base:latest",
+  "forwardPorts": [
+    3000
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "javascript.format.enable": true,
+        "javascript.validate.enable": true
+      },
+      "extensions": [
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "echo 'Container created successfully!'"
+}
