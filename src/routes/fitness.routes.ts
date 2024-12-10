@@ -4,7 +4,7 @@ import { getFitnessAdvice, getNutritionAdvice } from '../controllers/getData.con
 
 const router = express.Router();
 
-router.route('/getFitnessAdvice').get(verifyToken, getFitnessAdvice);
-router.route('/getNutritionAdvice').get(verifyToken, getNutritionAdvice);
+router.route('/getFitnessAdvice').post(verifyToken, getFitnessAdvice);
+router.route('/getNutritionAdvice').post(verifyToken, getNutritionAdvice);
 
 export default router
