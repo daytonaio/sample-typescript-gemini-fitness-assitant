@@ -16,5 +16,5 @@
       ]
     }
   },
-  "postCreateCommand": "echo 'Container created successfully!'"
+  "postCreateCommand": "npm install && npm run dev"
 }
