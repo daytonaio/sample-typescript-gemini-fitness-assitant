@@ -6,9 +6,7 @@ Once you finish your sample and it gets merged, you can open a PR in the Daytona
 
 # Sample Typescript
 
-Sample description
-
-This sample project demonstrates how to build a fitness assistant application using Node.js, TypeScript, and the Gemini API, and is designed to be used with Daytona. It includes features such as user authentication, get fitness advice, and get nutrition advice.
+This project demonstrates how to build a fitness assistant application using Node.js, TypeScript, and the Gemini API, and is designed to be used with Daytona. It includes features such as user authentication, get fitness advice, and get nutrition advice.
 
 
 ## 🚀 Getting Started  
