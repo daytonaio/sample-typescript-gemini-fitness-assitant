@@ -1,8 +1,13 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
+<div align="center">
 
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
+# Fitness Assistant
 
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Daytona](https://img.shields.io/badge/Daytona-000000?style=for-the-badge&logo=daytona&logoColor=white)
+![Gemini API](https://img.shields.io/badge/Gemini%20API-FF4500?style=for-the-badge&logo=gemini&logoColor=white)
+
+</div>
 
 ## Sample TypeScript using Node.js
 
