@@ -16,5 +16,6 @@
       ]
     }
   },
-  "postCreateCommand": "npm install && npm run dev"
+  "postCreateCommand": "npm install",
+  "postAttachCommand": "npm run dev"
 }
