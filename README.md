@@ -46,7 +46,7 @@ This project demonstrates how to build a fitness assistant application using Nod
    ```bash
    npm run dev
    ```
-### 📸 Screenshots
+## 📸 Screenshots
 <details>
 <summary>Click to view screenshots</summary>
    <img width="1710" alt="Screenshot 2024-12-17 at 12 48 47 AM" src="https://github.com/user-attachments/assets/0858a12a-25cb-41b1-971c-ee0673947580" />
@@ -60,7 +60,7 @@ This project demonstrates how to build a fitness assistant application using Nod
 </details>
 
 
-### Setting Up Environment Variables
+## Setting Up Environment Variables
 
 Before running the application, you need to set up the environment variables. Follow these steps:
 
@@ -80,7 +80,7 @@ Before running the application, you need to set up the environment variables. Fo
 
 These environment variables are essential for the application to run correctly and securely.
 
-### Using Postman for API Testing
+## Using Postman for API Testing
 
 You can use Postman to test the API endpoints provided by the fitness assistant application. Follow these steps to set up Postman for testing:
 
