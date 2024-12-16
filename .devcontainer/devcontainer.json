@@ -1,21 +1,21 @@
 {
   "name": "fitness-assistant dev container",
-  "image": "mcr.microsoft.com/devcontainers/base:latest",
-  "forwardPorts": [
-    3000
-  ],
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "forwardPorts": [3000],
   "customizations": {
     "vscode": {
       "settings": {
         "javascript.format.enable": true,
-        "javascript.validate.enable": true
+        "javascript.validate.enable": true,
+        "editor.formatOnSave": true,
+        "typescript.validate.enable": true
       },
       "extensions": [
         "ms-vscode.vscode-typescript-tslint-plugin",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
       ]
     }
   },
-  "postCreateCommand": "npm install",
-  "postAttachCommand": "npm run dev"
+  "postCreateCommand": "npm install"
 }
