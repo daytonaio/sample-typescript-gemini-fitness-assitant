@@ -46,6 +46,19 @@ This project demonstrates how to build a fitness assistant application using Nod
    ```bash
    npm run dev
    ```
+### 📸 Screenshots
+<details>
+<summary>Click to view screenshots</summary>
+   <img width="1710" alt="Screenshot 2024-12-17 at 12 48 47 AM" src="https://github.com/user-attachments/assets/0858a12a-25cb-41b1-971c-ee0673947580" />
+   
+   <img width="1710" alt="Screenshot 2024-12-17 at 12 50 42 AM" src="https://github.com/user-attachments/assets/d6f97517-036a-46bf-b403-cc68a13a147b" />
+   
+   <img width="1710" alt="Screenshot 2024-12-17 at 12 52 16 AM" src="https://github.com/user-attachments/assets/2634d222-2ccc-4f39-9d59-0f98b1a2682c" />   
+   
+   <img width="1710" alt="Screenshot 2024-12-17 at 1 42 20 AM" src="https://github.com/user-attachments/assets/fbc66cc6-6615-4690-89fb-3ddfd33498ba" />
+
+</details>
+
 
 ### Setting Up Environment Variables
 
