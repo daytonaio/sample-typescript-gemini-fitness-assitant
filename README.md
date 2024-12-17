@@ -24,23 +24,24 @@ This project demonstrates how to build a fitness assistant application using Nod
    daytona create https://github.com/Thund3rHawk/fitness-assistant.git
    ```
 
-3. **Explore the Project Routes**:
+3. **Set Up Environment Variables**:
 
-   The fitness assistant application provides several routes to interact with the system. Below are the main routes available:
+   Before running the application, you need to set up the environment variables. Follow these steps:
 
-   - **User Authentication**:
+   1. **Create a `.env` file** in the root directory of the project.
+   2. **Add the following environment variables** to the `.env` file:
 
-     - `POST /api/v1/auth/sign-up`: Register a new user.
-     - `POST /api/v1/auth/sign-in`: Authenticate an existing user and obtain a token.
+      ```plaintext
+      DATABASE_URL = your_mongodb_url
+      GEMINI_API_KEY = your_gemini_api_key
+      JWT_SECRET = your_jwt_secret_key
+      ```
 
-   - **Fitness Advice**:
+      Replace `your_mongodb_url`, `your_gemini_api_key`, and `your_jwt_secret_key` with your actual MongoDB URL, Gemini API key, and JWT secret key.
 
-     - `POST /api/v1/getFitnessAdvice`: Get personalized fitness advice based on user data.
+   3. **Save the `.env` file**.
 
-   - **Nutrition Advice**:
-     - `POST /api/v1/getNutritionAdvice`: Get personalized nutrition advice based on user data.
-
-   Each route is designed to handle specific tasks and return appropriate responses. Ensure you have the necessary authentication tokens when accessing protected routes.
+   These environment variables are essential for the application to run correctly and securely.
 
 4. **Start the Application**:
    ```bash
@@ -74,25 +75,119 @@ This combination of technologies ensures that the Fitness Assistant application 
 
 </details>
 
+## API Endpoints
 
-## Setting Up Environment Variables
+Here are some of the key API endpoints provided by the fitness assistant application, along with sample request and response JSON:
 
-Before running the application, you need to set up the environment variables. Follow these steps:
+### User Registration
+   <details>
+   <summary>Endpoint: `POST /api/v1/auth/sign-up`</summary>
+      
+      **Request**:
+      ```json
+      {
+         "name": "john_doe",
+         "email": "john@example.com",
+         "password": "securepassword123",
+         "age": 20,
+         "gender": "male",
+         "height": 5.7,
+         "weight": 60
+      }
+      ```
 
-1. **Create a `.env` file** in the root directory of the project.
-2. **Add the following environment variables** to the `.env` file:
+      **Response**:
+      ```json
+      {
+         "message": "SignUp Successfull",
+      }
+      ```
 
-    ```plaintext
-    DATABASE_URL = your_mongodb_url
-    GEMINI_API_KEY = your_gemini_api_key
-    JWT_SECRET = your_jwt_secret_key
-    ```
 
-   Replace `your_jwt_secret_key` and `your_gemini_api_key` with your actual secret key and API key.
+   </details>
 
-3. **Save the `.env` file**.
+### User Login
 
-These environment variables are essential for the application to run correctly and securely.
+   <details>
+   <summary>Endpoint: `POST /api/v1/auth/sign-in`</summary>
+      
+      **Request**:
+      ```json
+      {
+         "email": "abc@example.com",
+         "password": "securepassword123"
+      }
+      ```
+
+      **Response**:
+      ```json
+      {
+         "message": "Login successful",
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+      }
+      ```
+
+   </details>
+
+### Get Fitness Advice
+
+   <details>
+   <summary>Endpoint: `POST /api/v1/getFitnessAdvice`</summary>
+      
+      **Request**:
+      ```json
+      {
+         "email": "abc@example.com"
+      }
+      ```
+
+      **Request Headers**:
+      ```json
+      {
+         "Authorization": "Bearer YOUR_JWT_TOKEN"
+      }
+      ```
+
+      **Response**:
+      ```json
+      {
+         "advice": "Based on your profile, we recommend a mix of cardio and strength training."
+      }
+      ```
+   </details>
+
+
+### Get Nutrition Advice
+
+   <details>
+   <summary>Endpoint: `POST /api/v1/getNutritionAdvice`</summary>
+      
+      **Request**:
+      ```json
+      {
+         "email": "abc@example.com"
+      }
+      ```
+
+      **Request Headers**:
+      ```json
+      {
+         "Authorization": "Bearer YOUR_JWT_TOKEN"
+      }
+      ```
+
+
+      **Response**:
+      ```json
+      {
+         "advice": "We recommend a balanced diet with a focus on protein and healthy fats."
+      }
+      ```
+   
+   </details>
+
+
+These endpoints allow users to register, log in, and receive personalized fitness and nutrition advice.
 
 ## Using Postman for API Testing
 
