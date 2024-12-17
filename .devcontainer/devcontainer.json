@@ -1,7 +1,7 @@
 {
   "name": "fitness-assistant dev container",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-  "forwardPorts": [3000],
+  "forwardPorts": [8080],
   "customizations": {
     "vscode": {
       "settings": {

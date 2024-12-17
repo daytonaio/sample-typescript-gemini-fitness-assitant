@@ -4,7 +4,7 @@ import authRoutes from './routes/auth.routes'
 import fitnessRoutes from './routes/fitness.routes'
 configDotenv();
 
-const port = process.env.PORT || 4000;
+const port = 8080;
 const app = express();
 
 app.use(express.json({limit: "16kb"}))
