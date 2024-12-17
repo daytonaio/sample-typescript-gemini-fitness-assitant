@@ -21,5 +21,5 @@
       ]
     }
   },
-  "postCreateCommand": "npm install && curl -fsSL https://get.daytona.io | sh"
+  "postCreateCommand": "npm install"
 }
