@@ -2,10 +2,6 @@
   "name": "fitness-assistant dev container",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
   "forwardPorts": [8080],
-  "runArgs": [
-    "--privileged", 
-    "--cap-add=NET_BIND_SERVICE"
-  ],
   "customizations": {
     "vscode": {
       "settings": {
@@ -25,8 +21,5 @@
       ]
     }
   },
-  "postCreateCommand": "npm install",
-  "remoteUser": "node",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-  "workspaceFolder": "/workspace"
+  "postCreateCommand": "npm install && curl -fsSL https://get.daytona.io | sh"
 }
