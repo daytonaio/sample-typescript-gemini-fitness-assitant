@@ -13,6 +13,20 @@
 
 This project demonstrates how to build a fitness assistant application using Node.js, TypeScript, and the Gemini API, and is designed to be used with Daytona. It includes features such as user authentication, get fitness advice, and get nutrition advice.
 
+## 🛠️ Tech Stack
+
+The Fitness Assistant project leverages a modern and efficient tech stack to deliver a high-quality application. Below are the key technologies used:
+
+- **Node.js**: A powerful JavaScript runtime built on Chrome's V8 engine, used for building the server-side of the application.
+- **TypeScript**: A statically typed superset of JavaScript that enhances code quality and maintainability.
+- **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+- **Prisma**: An ORM (Object-Relational Mapping) tool that simplifies database interactions and ensures type safety with TypeScript.
+- **MongoDB**: A NoSQL database that stores data in JSON-like documents, providing flexibility and scalability.
+- **Gemini API**: An external API used to fetch fitness and nutrition data, enabling personalized advice for users.
+- **Daytona**: A development environment that simplifies the process of creating, managing, and deploying applications.
+
+This combination of technologies ensures that the Fitness Assistant application is scalable, maintainable, and easy to develop.
+
 ## 🚀 Getting Started
 
 ### Open Using Daytona
