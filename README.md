@@ -83,25 +83,25 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    <details>
    <summary>Endpoint: `POST /api/v1/auth/sign-up`</summary>
       
-      **Request**:
-      ```json
-      {
-         "name": "john_doe",
-         "email": "john@example.com",
-         "password": "securepassword123",
-         "age": 20,
-         "gender": "male",
-         "height": 5.7,
-         "weight": 60
-      }
-      ```
+   **Request**:
+   ```json
+   {
+      "name": "john_doe",
+      "email": "john@example.com",
+      "password": "securepassword123",
+      "age": 20,
+      "gender": "male",
+      "height": 5.7,
+      "weight": 60
+   }
+   ```
 
-      **Response**:
-      ```json
-      {
-         "message": "SignUp Successfull",
-      }
-      ```
+   **Response**:
+   ```json
+   {
+      "message": "SignUp Successfull",
+   }
+   ```
 
 
    </details>
@@ -111,21 +111,21 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    <details>
    <summary>Endpoint: `POST /api/v1/auth/sign-in`</summary>
       
-      **Request**:
-      ```json
-      {
-         "email": "abc@example.com",
-         "password": "securepassword123"
-      }
-      ```
+   **Request**:
+   ```json
+   {
+      "email": "abc@example.com",
+      "password": "securepassword123"
+   }
+   ```
 
-      **Response**:
-      ```json
-      {
-         "message": "Login successful",
-         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-      }
-      ```
+   **Response**:
+   ```json
+   {
+      "message": "Login successful",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+   }
+   ```
 
    </details>
 
@@ -134,26 +134,26 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    <details>
    <summary>Endpoint: `POST /api/v1/getFitnessAdvice`</summary>
       
-      **Request**:
-      ```json
-      {
-         "email": "abc@example.com"
-      }
-      ```
+   **Request**:
+   ```json
+   {
+      "email": "abc@example.com"
+   }
+   ```
 
-      **Request Headers**:
-      ```json
-      {
-         "Authorization": "Bearer YOUR_JWT_TOKEN"
-      }
-      ```
+   **Request Headers**:
+   ```json
+   {
+      "Authorization": "Bearer YOUR_JWT_TOKEN"
+   }
+   ```
 
-      **Response**:
-      ```json
-      {
-         "advice": "Based on your profile, we recommend a mix of cardio and strength training."
-      }
-      ```
+   **Response**:
+   ```json
+   {
+      "advice": "Based on your profile, we recommend a mix of cardio and strength training."
+   }
+   ```
    </details>
 
 
@@ -162,27 +162,27 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    <details>
    <summary>Endpoint: `POST /api/v1/getNutritionAdvice`</summary>
       
-      **Request**:
-      ```json
-      {
-         "email": "abc@example.com"
-      }
-      ```
+   **Request**:
+   ```json
+   {
+      "email": "abc@example.com"
+   }
+   ```
 
-      **Request Headers**:
-      ```json
-      {
-         "Authorization": "Bearer YOUR_JWT_TOKEN"
-      }
-      ```
+   **Request Headers**:
+   ```json
+   {
+      "Authorization": "Bearer YOUR_JWT_TOKEN"
+   }
+   ```
 
 
-      **Response**:
-      ```json
-      {
-         "advice": "We recommend a balanced diet with a focus on protein and healthy fats."
-      }
-      ```
+   **Response**:
+   ```json
+   {
+      "advice": "We recommend a balanced diet with a focus on protein and healthy fats."
+   }
+   ```
    
    </details>
 
