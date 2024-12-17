@@ -2,20 +2,31 @@
   "name": "fitness-assistant dev container",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
   "forwardPorts": [8080],
+  "runArgs": [
+    "--privileged", 
+    "--cap-add=NET_BIND_SERVICE"
+  ],
   "customizations": {
     "vscode": {
       "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.autoSave": "onWindowChange",
         "javascript.format.enable": true,
         "javascript.validate.enable": true,
         "editor.formatOnSave": true,
         "typescript.validate.enable": true
       },
       "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
         "ms-vscode.vscode-typescript-tslint-plugin",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint"
       ]
     }
   },
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install",
+  "remoteUser": "node",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace"
 }
