@@ -68,7 +68,6 @@ Before running the application, you need to set up the environment variables. Fo
 2. **Add the following environment variables** to the `.env` file:
 
     ```plaintext
-    PORT = 3000
     DATABASE_URL = your_mongodb_url
     GEMINI_API_KEY = your_gemini_api_key
     JWT_SECRET = your_jwt_secret_key
