@@ -53,11 +53,11 @@ This project demonstrates how to build a fitness assistant application using Nod
 
    This command will generate the Prisma client based on your Prisma schema, allowing you to interact with your MongoDB database using Prisma. -->
 
-<!-- 5. **Start the Application**:
+4. **Start the Application**:
 
    ```bash
    npm run dev
-   ``` -->
+   ```
 
 ## 🛠️ Tech Stack
 
