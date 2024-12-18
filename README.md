@@ -43,7 +43,7 @@ This project demonstrates how to build a fitness assistant application using Nod
 
    These environment variables are essential for the application to run correctly and securely.
 
-4. **Generate Prisma Client**:
+<!-- 4. **Generate Prisma Client**:
 
    After setting up the environment variables, you need to generate the Prisma client. Run the following command:
 
@@ -51,14 +51,14 @@ This project demonstrates how to build a fitness assistant application using Nod
    npx prisma generate
    ```
 
-   This command will generate the Prisma client based on your Prisma schema, allowing you to interact with your MongoDB database using Prisma.
+   This command will generate the Prisma client based on your Prisma schema, allowing you to interact with your MongoDB database using Prisma. -->
 
-5. **Start the Application**:
+<!-- 5. **Start the Application**:
 
    ```bash
    npm run dev
-   ```
-   
+   ``` -->
+
 ## 🛠️ Tech Stack
 
 The Fitness Assistant project leverages a modern and efficient tech stack to deliver a high-quality application. Below are the key technologies used:
@@ -74,6 +74,7 @@ The Fitness Assistant project leverages a modern and efficient tech stack to del
 This combination of technologies ensures that the Fitness Assistant application is scalable, maintainable, and easy to develop.
 
 ## 📸 Screenshots
+
 <details>
 <summary>Click to view screenshots</summary>
    <img width="1710" alt="Screenshot 2024-12-17 at 12 48 47 AM" src="https://github.com/user-attachments/assets/0858a12a-25cb-41b1-971c-ee0673947580" />
@@ -91,6 +92,7 @@ This combination of technologies ensures that the Fitness Assistant application 
 Here are some of the key API endpoints provided by the fitness assistant application, along with sample request and response JSON:
 
 ### User Registration
+
    <details>
    <summary>Endpoint: `POST /api/v1/auth/sign-up`</summary>
       
@@ -98,7 +100,7 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    ```json
    {
       "name": "john_doe",
-      "email": "john@example.com",
+      "email": "john@gmail.com",
       "password": "securepassword123",
       "age": 20,
       "gender": "male",
@@ -107,13 +109,13 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    }
    ```
 
-   **Response**:
-   ```json
-   {
-      "message": "SignUp Successfull",
-   }
-   ```
+**Response**:
 
+```json
+{
+  "message": "SignUp Successfull"
+}
+```
 
    </details>
 
@@ -130,13 +132,14 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    }
    ```
 
-   **Response**:
-   ```json
-   {
-      "message": "Login successful",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-   }
-   ```
+**Response**:
+
+```json
+{
+  "message": "Login successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
 
    </details>
 
@@ -152,21 +155,23 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    }
    ```
 
-   **Request Headers**:
-   ```json
-   {
-      "Authorization": "Bearer YOUR_JWT_TOKEN"
-   }
-   ```
+**Request Headers**:
 
-   **Response**:
-   ```json
-   {
-      "advice": "Based on your profile, we recommend a mix of cardio and strength training."
-   }
-   ```
+```json
+{
+  "Authorization": "Bearer YOUR_JWT_TOKEN"
+}
+```
+
+**Response**:
+
+```json
+{
+  "advice": "Based on your profile, we recommend a mix of cardio and strength training."
+}
+```
+
    </details>
-
 
 ### Get Nutrition Advice
 
@@ -180,23 +185,23 @@ Here are some of the key API endpoints provided by the fitness assistant applica
    }
    ```
 
-   **Request Headers**:
-   ```json
-   {
-      "Authorization": "Bearer YOUR_JWT_TOKEN"
-   }
-   ```
+**Request Headers**:
 
+```json
+{
+  "Authorization": "Bearer YOUR_JWT_TOKEN"
+}
+```
 
-   **Response**:
-   ```json
-   {
-      "advice": "We recommend a balanced diet with a focus on protein and healthy fats."
-   }
-   ```
-   
+**Response**:
+
+```json
+{
+  "advice": "We recommend a balanced diet with a focus on protein and healthy fats."
+}
+```
+
    </details>
-
 
 These endpoints allow users to register, log in, and receive personalized fitness and nutrition advice.
 
@@ -204,25 +209,29 @@ These endpoints allow users to register, log in, and receive personalized fitnes
 
 You can use Postman to test the API endpoints provided by the fitness assistant application. Follow these steps to set up Postman for testing:
 
-   1. **Install Postman**: Download and install Postman from the [official website](https://www.postman.com/downloads/).
-   
-   2. **Import the API Collection**:
+1.  **Install Postman**: Download and install Postman from the [official website](https://www.postman.com/downloads/).
+
+2.  **Import the API Collection**:
+
     - Open Postman and click on the "Import" button.
     - Import the provided Postman collection file (`postman_collection.json`) from the project repository.
-   
-   3. **Set Up Environment Variables**:
+
+3.  **Set Up Environment Variables**:
+
     - In Postman, go to "Environments" and create a new environment.
     - Add the following variables to the environment:
       - `baseUrl`: `http://localhost:8080/api/v1`
       - `jwtToken`: Your JWT token obtained from the sign-in route.
-   
-   4. **Testing the Endpoints**:
+
+4.  **Testing the Endpoints**:
+
     - Use the imported collection to test the various endpoints.
     - Ensure you have the `jwtToken` set in the environment for authenticated routes.
 
 By using Postman, you can easily test and debug the API endpoints to ensure they are working as expected.
 
 ## ✨ Features
+
 - **Framework**: Built using Node.js and TypeScript, ensuring a robust and scalable architecture.
 - **User Authentication**: Secure user registration and login functionality.
 - **Fitness Advice**: Personalized fitness recommendations based on user data.

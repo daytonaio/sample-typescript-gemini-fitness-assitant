@@ -1,7 +1,9 @@
 {
   "name": "fitness-assistant dev container",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-  "forwardPorts": [8080],
+  "forwardPorts": [
+    8080
+  ],
   "customizations": {
     "vscode": {
       "settings": {
@@ -21,6 +23,6 @@
       ]
     }
   },
-  "postCreateCommand": "npm install",
-  "remoteUser": "root"
+  "postCreateCommand": "npm install && npx prisma generate && npx prisma db push && npm run dev"
+  // "remoteUser": "root"
 }
