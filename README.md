@@ -43,7 +43,18 @@ This project demonstrates how to build a fitness assistant application using Nod
 
    These environment variables are essential for the application to run correctly and securely.
 
-4. **Start the Application**:
+4. **Generate Prisma Client**:
+
+   After setting up the environment variables, you need to generate the Prisma client. Run the following command:
+
+   ```bash
+   npx prisma generate
+   ```
+
+   This command will generate the Prisma client based on your Prisma schema, allowing you to interact with your MongoDB database using Prisma.
+
+5. **Start the Application**:
+
    ```bash
    npm run dev
    ```
