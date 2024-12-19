@@ -29,7 +29,7 @@ The source code for this project can be found at the following GitHub repository
 2. **Create the Workspace**:
 
    ```bash
-   daytona create https://github.com/Thund3rHawk/fitness-assistant.git
+   daytona create https://www.daytona.io/docs/installation/installation/
    ```
 
 3. **Set Up Environment Variables**:
