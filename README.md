@@ -29,7 +29,7 @@ The source code for this project can be found at the following GitHub repository
 2. **Create the Workspace**:
 
    ```bash
-   daytona create https://www.daytona.io/docs/installation/installation/
+   daytona create https://github.com/daytonaio/sample-typescript-gemini-fitness-assistant
    ```
 
 3. **Set Up Environment Variables**:
