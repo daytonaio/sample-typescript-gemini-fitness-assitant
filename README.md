@@ -13,14 +13,6 @@
 
 This project demonstrates how to build a fitness assistant application using Node.js, TypeScript, and the Gemini API, and is designed to be used with Daytona. It includes features such as user authentication, get fitness advice, and get nutrition advice.
 
-```markdown
-## Repository URL
-
-The source code for this project can be found at the following GitHub repository:
-
-[daytonaio/sample-typescript-gemini-fitness-assistant](https://github.com/daytonaio/sample-typescript-gemini-fitness-assistant)
-```
-
 ## 🚀 Getting Started
 
 ### Open Using Daytona
@@ -29,7 +21,7 @@ The source code for this project can be found at the following GitHub repository
 2. **Create the Workspace**:
 
    ```bash
-   daytona create https://github.com/daytonaio/sample-typescript-gemini-fitness-assistant
+   daytona create https://github.com/daytonaio/sample-typescript-gemini-fitness-assitant.git
    ```
 
 3. **Set Up Environment Variables**:
@@ -248,4 +240,3 @@ By using Postman, you can easily test and debug the API endpoints to ensure they
 - **Daytona Compatibility**: Easily deployable and manageable within the Daytona environment.
 
 List of sample features (e.g. realtime chat app, standardized development environment with devcontainers)
-
